@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/templates/styles.css" />
+    </head>
+    <body>
+        <h1>Share Up</h1>
+        <div class="navigator">
+            <li class="directions"><a> &#8592;</a> <a>&#8594;</a></li>
+            <li class="input_wrapper">
+                <input id="path" type="text" defaultvalue="" />
+                <button class="go" onclick="go()">Go</button></li>
+            </li>
+        </div>
+        <div id="demo"></div>
+
+        <form id="upload_section" action="/UploadFile/" enctype="multipart/form-data" method="post">
+            <input id="upload_button" name="files" type="file" multiple />
+            <input id="submit_button" type="submit" />
+        </form>
+        <img class="logo" src="/templates/Images/logo.svg">
+    </body>
+    <script src="/templates/onload.js"></script>
+    <script src="/templates/main.js"></script>
+</html>
